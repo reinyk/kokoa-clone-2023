@@ -5,6 +5,7 @@
 /* screens */
 @import "screens/login.css";
 @import "screens/friends.css";
+@import "screens/find.css";
 
 /* Components */
 @import "components/status-bar.css";
@@ -12,6 +13,7 @@
 @import "components/screen-header.css";
 @import "components/user-component.css";
 @import "components/badge.css";
+@import "components/dot.css";
 
 
 body {
