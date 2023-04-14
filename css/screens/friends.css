@@ -1,13 +1,11 @@
 #friends-display-link {
     text-align: center;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
     background-color: #FAFAFA;
     padding: 15px 0px;
     font-size: 15px;
     margin-bottom: 15px;
+    margin-top: -15px;
 }
 
 #friends-display-link i{
