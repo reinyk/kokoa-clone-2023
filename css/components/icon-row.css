@@ -24,7 +24,7 @@
     font-size: 14px;
 }
 
-.icon-row__icon :hover {
+.icon-row :hover {
     cursor: pointer;
     color: black;
 }
