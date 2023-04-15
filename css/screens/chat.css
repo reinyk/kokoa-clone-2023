@@ -28,12 +28,27 @@
     background-color: #abc1d1;
 }
 
+@keyframes fliptimestamp {
+    0% {
+        transform: none;
+    }
+    50% {
+        transform: rotateX(360deg);
+    }
+    100% {
+        transform: none;
+    }
+}
+
 .chat__timestamp {
     color: white;
     background-color: #92a4b2;
     padding: 15px;
     border-radius: 25px;
     margin-bottom: 25px;
+    animation-delay: 0.5s;
+    animation: fliptimestamp 1s ease-in-out;
+
 }
 
 @keyframes messageReceive {
@@ -51,7 +66,7 @@
     width: 100%;
     display: flex;
     margin-bottom: 25px;
-    animation-delay: 0.5s;
+    animation-delay: 1s;
     animation: messageReceive 0.5s linear;
 }
 
@@ -100,7 +115,7 @@
 
 .message-row--own {
     justify-content: flex-end;
-    animation-delay: 0.5s;
+    animation-delay: 1.5s;
     animation: messageSend 0.5s linear;
 }
 
@@ -191,7 +206,7 @@
     opacity: 0;
 }
 
-.reply:focus-within input {
+.reply input:focus {
     width: 110%;
     transform: translateX(-10%) translateY(-80px);
 }
